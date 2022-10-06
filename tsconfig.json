@@ -1,0 +1,16 @@
+{  
+  "compilerOptions": {
+    "allowJs": true,    
+    "target": "ES2017",
+    "module": "CommonJS",
+    "lib": ["ESNext", "DOM"],
+    "useDefineForClassFields": true,
+    "noImplicitAny": false,
+    "moduleResolution": "Node",  
+    "strict": false,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  }
+}
