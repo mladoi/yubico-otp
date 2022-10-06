@@ -4,6 +4,7 @@
   "author": "mladoi",
   "license": "MIT",
   "description": "Client for Yubico OTP verify service",
+  "keywords": ["yubico", "yubikey", "otp"],
   "scripts": {
     "start": "node src/run.js",
     "test": "node tests/test.js"
