@@ -3,16 +3,13 @@
   "version": "0.0.1",
   "author": "mladoi",
   "license": "MIT",
-  "description": "Yubico OTP verify service",
+  "description": "Client for Yubico OTP verify service",
   "scripts": {
     "start": "node src/run.js",
     "test": "node tests/test.js"
   },
-  "exports": {
-    ".": {
-      "import": "./src/main.js"
-    }
-  },
+  "main": "src/main.js",
+  "types": "src/main.d.ts",
   "repository": {
   "homepage": "https://github.com/mladoi/yubico-otp",
     "type": "git",
