@@ -61,7 +61,8 @@ async function verifyOtp(config, otp) {
     const checkSignature = generateSignature(buildParamsStringForSigning(validationResult), config.apiKey);
     return Object.assign(validationResult, {
         deviceId: otp.substring(0, 12),
-        signatureValid: checkSignature == validationResult.h
+        signatureValid: checkSignature == validationResult.h,
+        isOk: validationResult.status == 'OK'
     });
 }
 exports.verifyOtp = verifyOtp;
