@@ -1,4 +1,6 @@
-export interface VerificationResult extends Record<string, string|boolean> {
+export interface VerificationResult extends Record<string, string|boolean> {    
+    /** status equals "OK" */
+    isOk: boolean,
     /** first 12 chars of OTP represent public key of usb device */
     deviceId: string,
     /** does the returned h match the signature generated from the response */
